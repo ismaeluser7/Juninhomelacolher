@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Juninho</title>
+
+<style>
+
+body{
+background-image: url("{{ url_for('static', filename='fundo.jpg') }}");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height:100vh;
+
+color:rgb(8, 8, 8);
+font-family:Arial;
+text-align:center;
+}
+
+.logo{
+margin-top:40px;
+}
+
+.logo img{
+width:150px;
+}
+
+.links{
+margin-top:40px;
+}
+
+.botao{
+animation:aparecer 0.8s ease;
+display:block;
+width:250px;
+margin:15px auto;
+padding:15px;
+background:#0a0909;
+color:rgb(250, 246, 246);
+text-decoration:none;
+border-radius:10px;
+font-size:18px;
+
+transition:0.3s;
+}
+
+.botao:hover{
+background:#e74a71;
+transform:scale(1.08);
+}
+
+</style> 
+
+</head>
+
+<body>
+
+<div class="logo">
+<img src="/static/logo.png">
+<h2>Juninho Mela Colher</h2>
+</div>
+
+<div class="links">
+
+<a class="botao" href="https://www.instagram.com/ciceropereirade99/" target="_blank">
+Instagram
+</a>
+
+<a class="botao" href="https://t.me" target="_blank">
+Telegram
+</a>
+
+<a class="botao" href="https://wa.me/5599999999999" target="_blank">
+WhatsApp
+</a>
+
+<a class="botao" href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+Facebook
+</a>
+
+<a class="botao" href="mailto:email@email.com">
+Contato por Email
+</a>
+<h2>Contrate-o já! Só assim ele solta seu celular.</h2>
+</div>
+
+</body>
+</html>
